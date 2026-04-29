@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sicu73</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 720px; margin: 2rem auto; line-height: 1.5; }
+      header { display: flex; justify-content: space-between; align-items: center; }
+      button { padding: .5rem .8rem; cursor: pointer; }
+      .card { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-top: 1rem; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 data-i18n="title">Benvenuto</h1>
+      <button id="langToggle" aria-label="Switch language" data-lang="it">English</button>
+    </header>
+
+    <main>
+      <p data-i18n="intro">Questa è la versione italiana completa dell'interfaccia.</p>
+      <section class="card">
+        <h2 data-i18n="sectionTitle">Impostazioni</h2>
+        <p data-i18n="sectionBody">Qui puoi configurare tutte le opzioni dell'applicazione.</p>
+      </section>
+    </main>
+
+    <script>
+      const i18n = {
+        it: {
+          pageTitle: 'Sicu73',
+          title: 'Benvenuto',
+          intro: "Questa è la versione italiana completa dell'interfaccia.",
+          sectionTitle: 'Impostazioni',
+          sectionBody: "Qui puoi configurare tutte le opzioni dell'applicazione.",
+          toggle: 'English',
+          lang: 'it'
+        },
+        en: {
+          pageTitle: 'Sicu73',
+          title: 'Welcome',
+          intro: 'This is the full English version of the interface.',
+          sectionTitle: 'Settings',
+          sectionBody: 'Here you can configure all application options.',
+          toggle: 'Italiano',
+          lang: 'en'
+        }
+      };
+
+      const setLanguage = (lang) => {
+        const dict = i18n[lang];
+        document.documentElement.lang = dict.lang;
+        document.title = dict.pageTitle;
+
+        document.querySelectorAll('[data-i18n]').forEach((node) => {
+          node.textContent = dict[node.dataset.i18n];
+        });
+
+        const button = document.getElementById('langToggle');
+        button.textContent = dict.toggle;
+        button.dataset.lang = lang;
+      };
+
+      document.getElementById('langToggle').addEventListener('click', (e) => {
+        const current = e.currentTarget.dataset.lang;
+        setLanguage(current === 'it' ? 'en' : 'it');
+      });
+
+      setLanguage('it');
+    </script>
+  </body>
+</html>
