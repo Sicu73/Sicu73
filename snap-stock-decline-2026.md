@@ -28,8 +28,11 @@ Il 16 giugno 2026, all'**Augmented World Expo (AWE)**, Snap ha presentato i nuov
 occhiali per la realtà aumentata **"Specs"**, in pre-ordine a **2.195 dollari**
 (con deposito rimborsabile di 200 dollari).
 
-- Il mercato ha reagito male: il titolo è sceso di circa **9,6%** il giorno del
-  lancio, seguito da un secondo giorno di ribassi.
+- Il mercato ha reagito con pressione al ribasso e critiche al prezzo. ⚠️ **Nota
+  di validazione**: la *percentuale esatta* del movimento nel giorno del lancio è
+  **incerta** — le fonti si contraddicono (chi riporta −9,6%, chi −1,6%, chi un
+  +8,56% pre-keynote seguito da un calo). Affidabile la *direzione/critiche*, non
+  la cifra puntuale (vedi `validazione-fonti-snap.md`, claim #11).
 - Gli analisti hanno criticato il **prezzo premium** e l'ingombro del prodotto,
   ritenendo la domanda incerta — soprattutto presso il **pubblico giovane/teen**,
   che è il cuore della base utenti di Snapchat.
@@ -65,7 +68,9 @@ Risultati del **primo trimestre 2026** (pubblicati il 6 maggio 2026):
 
 Punti deboli evidenziati:
 
-- Il **core advertising** è cresciuto solo del **~3%** nell'ultimo trimestre.
+- Il **fatturato pubblicitario** è cresciuto solo del **3% a $1,24 mld** nel
+  trimestre (dato da deposito SEC); a trainare i ricavi è stata semmai la voce
+  "Other revenue" (+87% a $285 mln).
 - I **grandi inserzionisti del Nord America restano un freno** (cicli di budget
   in ritardo rispetto ai miglioramenti della piattaforma).
 - Il **conflitto in Medio Oriente / Iran** ha avuto un impatto stimato in
